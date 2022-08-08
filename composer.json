@@ -43,6 +43,7 @@
         "drupal/views_aggregator": "^2.0",
         "drupal/views_flipped_table": "^1.4",
         "drupal/views_simple_math_field": "^3.0",
+        "drupal/we_megamenu": "^1.13",
         "drush/drush": "^10.2",
         "mnsami/composer-custom-directory-installer": "^2.0"
     },
