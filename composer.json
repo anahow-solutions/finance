@@ -42,6 +42,7 @@
         "drupal/token": "^1.10",
         "drupal/views_aggregator": "^2.0",
         "drupal/views_flipped_table": "^1.4",
+        "drupal/views_simple_math_field": "^3.0",
         "drush/drush": "^10.2",
         "mnsami/composer-custom-directory-installer": "^2.0"
     },
