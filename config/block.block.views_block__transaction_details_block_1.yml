@@ -1,0 +1,33 @@
+uuid: 7b8ffe04-f0bc-47d6-bb0d-988e0d47c23b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.transaction_details
+  module:
+    - node
+    - views
+  theme:
+    - olivero
+id: views_block__transaction_details_block_1
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:transaction_details-block_1'
+settings:
+  id: 'views_block:transaction_details-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      transaction: transaction

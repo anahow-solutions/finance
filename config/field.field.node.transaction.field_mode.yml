@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_mode
     - node.type.transaction
     - taxonomy.vocabulary.modes
+  content:
+    - 'taxonomy_term:modes:958a92b3-88d1-4e67-a280-637f5f86c06b'
 id: node.transaction.field_mode
 field_name: field_mode
 entity_type: node
@@ -14,7 +16,9 @@ label: Mode
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: 958a92b3-88d1-4e67-a280-637f5f86c06b
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

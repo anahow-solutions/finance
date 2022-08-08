@@ -24,14 +24,14 @@ content:
     third_party_settings: {  }
   field_unit_amount:
     type: number
-    weight: 1
+    weight: 2
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_units:
     type: number
-    weight: 2
+    weight: 1
     region: content
     settings:
       placeholder: ''

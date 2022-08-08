@@ -12,7 +12,7 @@ dependencies:
     - node.type.transaction
   module:
     - datetime
-    - entity_reference_revisions
+    - entity_form_field_label
     - options
     - user
 id: node.transaction.default
@@ -22,56 +22,57 @@ mode: default
 content:
   field_date:
     type: datetime_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 101
-    region: content
-  field_items:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 105
+    weight: 1
     region: content
   field_merchant:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
-      link: true
-    third_party_settings: {  }
-    weight: 104
+      link: false
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+    weight: 4
     region: content
   field_mode:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
-      link: true
-    third_party_settings: {  }
-    weight: 106
+      link: false
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+    weight: 5
     region: content
   field_type:
     type: list_default
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   field_user:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
-      link: true
-    third_party_settings: {  }
-    weight: 103
+      link: false
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_items: true
