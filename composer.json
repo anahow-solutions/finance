@@ -41,6 +41,7 @@
         "drupal/smart_date": "^3.5",
         "drupal/token": "^1.10",
         "drupal/views_aggregator": "^2.0",
+        "drupal/views_flipped_table": "^1.4",
         "drush/drush": "^10.2",
         "mnsami/composer-custom-directory-installer": "^2.0"
     },
