@@ -35,6 +35,7 @@
         "drupal/paragraphs_table": "^1.7",
         "drupal/pcr": "^1.4",
         "drupal/quick_node_clone": "^1.15",
+        "drupal/quicktabs": "^3.0@alpha",
         "drupal/select_or_other": "^4.0",
         "drupal/token": "^1.10",
         "drush/drush": "^10.2",
