@@ -1,0 +1,41 @@
+uuid: 1ec47710-eef6-4be2-a8b4-c3ec015b5d36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.transaction_item.field_item
+    - field.field.paragraph.transaction_item.field_unit_amount
+    - field.field.paragraph.transaction_item.field_units
+    - paragraphs.paragraphs_type.transaction_item
+  module:
+    - select_or_other
+id: paragraph.transaction_item.default
+targetEntityType: paragraph
+bundle: transaction_item
+mode: default
+content:
+  field_item:
+    type: select_or_other_reference
+    weight: 0
+    region: content
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
+    third_party_settings: {  }
+  field_unit_amount:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_units:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

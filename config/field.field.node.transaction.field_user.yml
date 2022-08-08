@@ -1,0 +1,32 @@
+uuid: 8872ec0f-0aae-42a4-aede-392fd37e4246
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user
+    - node.type.transaction
+id: node.transaction.field_user
+field_name: field_user
+entity_type: node
+bundle: transaction
+label: User
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        transactor: transactor
+        administrator: '0'
+    include_anonymous: true
+field_type: entity_reference

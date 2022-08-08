@@ -1,0 +1,9 @@
+uuid: f1536504-42b7-4e93-b8dd-5fe01c3aff05
+langcode: en
+status: true
+dependencies: {  }
+id: transactor
+label: Transactor
+weight: 4
+is_admin: null
+permissions: {  }

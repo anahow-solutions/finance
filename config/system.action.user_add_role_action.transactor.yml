@@ -1,0 +1,14 @@
+uuid: 6f54c705-ff2e-40a4-8d2c-bbac9808c54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.transactor
+  module:
+    - user
+id: user_add_role_action.transactor
+label: 'Add the Transactor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: transactor

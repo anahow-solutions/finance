@@ -1,0 +1,9 @@
+status: 1
+pattern: '[node:field_date:date:custom:Y/m/d], [node:field_type:value], [node:field_user:entity:account-name], [node:field_mode:entity:name], [node:field_merchant:entity:name]'
+escape: false
+preserve_titles: false
+dependencies:
+  config:
+    - node.type.transaction
+save: 1
+chunk: '50'

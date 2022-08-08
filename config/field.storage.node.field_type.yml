@@ -1,0 +1,30 @@
+uuid: 183da233-037b-4f50-bcfc-611f25d7cbd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type
+field_name: field_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: dr
+      label: Debit
+    -
+      value: cr
+      label: Credit
+    -
+      value: ft
+      label: 'Fund Transfer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

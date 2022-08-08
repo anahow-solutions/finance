@@ -1,0 +1,25 @@
+uuid: 199073db-218e-47b7-bc4d-c31abeb955a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_units
+    - paragraphs.paragraphs_type.transaction_item
+id: paragraph.transaction_item.field_units
+field_name: field_units
+entity_type: paragraph
+bundle: transaction_item
+label: Unit(s)
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: !!float 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

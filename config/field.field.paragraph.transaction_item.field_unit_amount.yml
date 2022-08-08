@@ -1,0 +1,23 @@
+uuid: 05d42ff6-0f4b-4e77-a233-67c361891b9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_unit_amount
+    - paragraphs.paragraphs_type.transaction_item
+id: paragraph.transaction_item.field_unit_amount
+field_name: field_unit_amount
+entity_type: paragraph
+bundle: transaction_item
+label: 'Unit Amount'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

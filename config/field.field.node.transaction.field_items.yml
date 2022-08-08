@@ -1,0 +1,31 @@
+uuid: b0ac06d7-9812-4e9c-8e78-1adcc1b6635c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_items
+    - node.type.transaction
+    - paragraphs.paragraphs_type.transaction_item
+  module:
+    - entity_reference_revisions
+id: node.transaction.field_items
+field_name: field_items
+entity_type: node
+bundle: transaction
+label: Item(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      transaction_item: transaction_item
+    negate: 0
+    target_bundles_drag_drop:
+      transaction_item:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

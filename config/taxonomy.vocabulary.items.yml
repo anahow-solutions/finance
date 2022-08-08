@@ -1,0 +1,8 @@
+uuid: 87f13d03-40c4-4d27-8dd7-154542634e04
+langcode: en
+status: true
+dependencies: {  }
+name: Items
+vid: items
+description: ''
+weight: 0

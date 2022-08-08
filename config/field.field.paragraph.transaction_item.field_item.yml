@@ -1,0 +1,29 @@
+uuid: f98c02be-5356-4f70-b4fd-89281280b82e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item
+    - paragraphs.paragraphs_type.transaction_item
+    - taxonomy.vocabulary.items
+id: paragraph.transaction_item.field_item
+field_name: field_item
+entity_type: paragraph
+bundle: transaction_item
+label: Item
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      items: items
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

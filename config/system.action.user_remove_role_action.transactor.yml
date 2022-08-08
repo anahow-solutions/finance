@@ -1,0 +1,14 @@
+uuid: 1b26e9d0-4460-4a75-9c1b-f3b75c6e5fdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.transactor
+  module:
+    - user
+id: user_remove_role_action.transactor
+label: 'Remove the Transactor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: transactor

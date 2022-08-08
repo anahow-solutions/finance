@@ -1,0 +1,10 @@
+uuid: d43c9a32-063e-423b-ac96-157ac5c22939
+langcode: en
+status: true
+dependencies: {  }
+id: transaction_item
+label: 'Transaction Item(s)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
