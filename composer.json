@@ -38,6 +38,7 @@
         "drupal/quicktabs": "^3.0@alpha",
         "drupal/select_or_other": "^4.0",
         "drupal/shs": "^2.0@RC",
+        "drupal/smart_date": "^3.5",
         "drupal/token": "^1.10",
         "drush/drush": "^10.2",
         "mnsami/composer-custom-directory-installer": "^2.0"
