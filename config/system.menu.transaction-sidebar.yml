@@ -1,0 +1,8 @@
+uuid: 716263c4-e326-4d95-aebf-75ab6816c197
+langcode: en
+status: true
+dependencies: {  }
+id: transaction-sidebar
+label: 'Transaction sidebar'
+description: ''
+locked: false

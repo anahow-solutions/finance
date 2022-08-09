@@ -1,0 +1,25 @@
+uuid: 91e4d56e-667f-41af-aa5e-379fe30bb5d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - we_megamenu
+  theme:
+    - seven
+id: transactionsidebar
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'we_megamenu_block:transaction-sidebar'
+settings:
+  id: 'we_megamenu_block:transaction-sidebar'
+  label: 'Transaction sidebar'
+  label_display: '0'
+  provider: we_megamenu
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: expenses
