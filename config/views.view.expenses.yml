@@ -34,6 +34,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: Transactions
       fields:
         field_date:
           id: field_date
