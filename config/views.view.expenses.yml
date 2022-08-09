@@ -690,6 +690,7 @@ display:
             field_user: field_user
             field_merchant: field_merchant
             field_mode: field_mode
+            field_item_category: field_item_category
             field_item: field_item
             field_units: field_units
             field_unit_amount: field_unit_amount
@@ -730,6 +731,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+            field_item_category:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             field_item:
               sortable: false
               default_sort_order: asc
@@ -740,14 +748,14 @@ display:
             field_units:
               sortable: false
               default_sort_order: asc
-              align: ''
+              align: views-align-right
               separator: ''
               empty_column: false
               responsive: ''
             field_unit_amount:
               sortable: false
               default_sort_order: asc
-              align: ''
+              align: views-align-right
               separator: ''
               empty_column: false
               responsive: ''
