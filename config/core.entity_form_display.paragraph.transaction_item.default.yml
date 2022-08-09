@@ -18,7 +18,7 @@ mode: default
 content:
   field_item:
     type: select_or_other_reference
-    weight: 0
+    weight: 1
     region: content
     settings:
       select_element_type: select_or_other_select
@@ -26,7 +26,7 @@ content:
     third_party_settings: {  }
   field_item_category:
     type: options_shs
-    weight: 1
+    weight: 0
     region: content
     settings:
       display_node_count: false
