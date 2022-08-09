@@ -1,0 +1,23 @@
+uuid: e2ee9191-a398-47fa-8fc2-4a6e3fc46c10
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transaction_type
+id: taxonomy_term.transaction_type.default
+targetEntityType: taxonomy_term
+bundle: transaction_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

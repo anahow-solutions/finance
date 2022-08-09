@@ -13,7 +13,9 @@ label: 'Unit Amount'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: !!float 1
 default_value_callback: ''
 settings:
   min: null

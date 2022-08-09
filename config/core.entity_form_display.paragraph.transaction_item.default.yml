@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.transaction_item.field_item
+    - field.field.paragraph.transaction_item.field_item_category
     - field.field.paragraph.transaction_item.field_unit_amount
     - field.field.paragraph.transaction_item.field_units
     - paragraphs.paragraphs_type.transaction_item
   module:
     - select_or_other
+    - shs
 id: paragraph.transaction_item.default
 targetEntityType: paragraph
 bundle: transaction_item
@@ -22,16 +24,26 @@ content:
       select_element_type: select_or_other_select
       sort_options: ''
     third_party_settings: {  }
+  field_item_category:
+    type: options_shs
+    weight: 1
+    region: content
+    settings:
+      display_node_count: false
+      create_new_items: false
+      create_new_levels: false
+      force_deepest: false
+    third_party_settings: {  }
   field_unit_amount:
     type: number
-    weight: 2
+    weight: 3
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_units:
     type: number
-    weight: 1
+    weight: 2
     region: content
     settings:
       placeholder: ''

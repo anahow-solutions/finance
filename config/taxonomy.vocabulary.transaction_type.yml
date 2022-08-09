@@ -1,0 +1,8 @@
+uuid: 30df96b7-bb5a-4f56-83c7-85d6ee8385f2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Item category'
+vid: transaction_type
+description: ''
+weight: 0

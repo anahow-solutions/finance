@@ -1,0 +1,29 @@
+uuid: 43bcd879-1d39-42e7-8a90-f325c2f81996
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_category
+    - paragraphs.paragraphs_type.transaction_item
+    - taxonomy.vocabulary.transaction_type
+id: paragraph.transaction_item.field_item_category
+field_name: field_item_category
+entity_type: paragraph
+bundle: transaction_item
+label: Category
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transaction_type: transaction_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
