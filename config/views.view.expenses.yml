@@ -13,7 +13,6 @@ dependencies:
     - field.storage.paragraph.field_units
     - node.type.transaction
   module:
-    - datatables
     - node
     - options
     - paragraphs
@@ -614,41 +613,84 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: datatables
+        type: table
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          caption: ''
-          summary: ''
-          description: ''
           columns:
-            title: title
+            field_date: field_date
+            field_type: field_type
+            field_user: field_user
+            field_merchant: field_merchant
+            field_mode: field_mode
+            field_item: field_item
+            field_units: field_units
+            field_unit_amount: field_unit_amount
+          default: '-1'
           info:
-            title:
-              sortable: 0
+            field_date:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
-              empty_column: 0
+              empty_column: false
               responsive: ''
-          default: '-1'
-          empty_table: 0
-          elements:
-            search_box: 1
-            table_info: 1
-            save_state: 0
-            table_tools: 0
-          layout:
-            autowidth: 0
-            themeroller: 0
-            sdom: ''
-          pages:
-            pagination_style: '0'
-            length_change: 0
-            display_length: '10'
-          hidden_columns:
-            title: '0'
+            field_type:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_user:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_merchant:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_mode:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_item:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_units:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_unit_amount:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
       row:
         type: fields
         options:
