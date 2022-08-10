@@ -1,0 +1,33 @@
+uuid: 4fa9f159-867f-4bad-9166-82f4430d5e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.transaction_details
+  module:
+    - node
+    - views
+  theme:
+    - finance
+id: finance_views_block__transaction_details_block_1_2
+theme: finance
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:transaction_details-block_1'
+settings:
+  id: 'views_block:transaction_details-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      transaction: transaction

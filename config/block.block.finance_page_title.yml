@@ -1,0 +1,20 @@
+uuid: 8b60ecb6-712f-4f9c-88ff-d471bd19e700
+langcode: en
+status: true
+dependencies:
+  theme:
+    - finance
+_core:
+  default_config_hash: P-2PK2v3yJQRI4Mg1RqKQ0Ki0wP_UUErIvahd_MtMVc
+id: finance_page_title
+theme: finance
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

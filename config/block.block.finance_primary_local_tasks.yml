@@ -1,0 +1,22 @@
+uuid: fa660cbc-d31e-4756-a04e-8db875d9fd8b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - finance
+_core:
+  default_config_hash: ouwsNHI1V3bwV1G1vl0EcbWy8AB9V62vgLOSjTpoCSI
+id: finance_primary_local_tasks
+theme: finance
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

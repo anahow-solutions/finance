@@ -1,0 +1,22 @@
+uuid: 3fc8150c-1736-4982-a5b3-a27746c9d7d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - finance
+_core:
+  default_config_hash: 6_eJxtyfANKFE_nfriHKgrARRIPHH88sI6jvQ4EHbBc
+id: finance_content
+theme: finance
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

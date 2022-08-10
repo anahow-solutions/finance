@@ -1,0 +1,10 @@
+name: Finance v0.1
+type: theme
+description: 'My Awesome theme.'
+package: Other
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - finance/global-styling
+
+base theme: seven

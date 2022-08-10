@@ -1,0 +1,22 @@
+uuid: 23b66af5-aa06-4c3e-ba04-fc0b8f0ffb61
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - finance
+_core:
+  default_config_hash: bYvyEzJ7UcmjXZAYLxb4Qb_J77K9bPbk4ealdap31FY
+id: finance_help
+theme: finance
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

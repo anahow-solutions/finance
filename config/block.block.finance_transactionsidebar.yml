@@ -1,0 +1,25 @@
+uuid: a6e2bd77-9b00-4fd8-864b-79cb98f6038b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - we_megamenu
+  theme:
+    - finance
+id: finance_transactionsidebar
+theme: finance
+region: content
+weight: 0
+provider: null
+plugin: 'we_megamenu_block:transaction-sidebar'
+settings:
+  id: 'we_megamenu_block:transaction-sidebar'
+  label: 'Transaction sidebar'
+  label_display: '0'
+  provider: we_megamenu
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: expenses

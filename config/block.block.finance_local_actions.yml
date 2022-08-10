@@ -1,0 +1,20 @@
+uuid: 2690973c-978b-497a-9ac2-d87989a900a7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - finance
+_core:
+  default_config_hash: gv5JXTvQXjlMY6PXrfxzcLMjMg4074WiEQCy7ZSMvK4
+id: finance_local_actions
+theme: finance
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
