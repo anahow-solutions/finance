@@ -21,6 +21,7 @@
         "drupal/block_field": "^1.0@RC",
         "drupal/body_node_id_class": "^1.1",
         "drupal/chosen": "^3.0",
+        "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
@@ -58,7 +59,8 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "mnsami/composer-custom-directory-installer": true
+            "mnsami/composer-custom-directory-installer": true,
+            "drupal/console-extend-plugin": true
         }
     },
     "extra": {
