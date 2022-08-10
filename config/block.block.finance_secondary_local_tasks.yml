@@ -9,7 +9,7 @@ _core:
 id: finance_secondary_local_tasks
 theme: finance
 region: sidebar_first
-weight: 0
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

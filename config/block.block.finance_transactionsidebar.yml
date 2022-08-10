@@ -9,8 +9,8 @@ dependencies:
     - finance
 id: finance_transactionsidebar
 theme: finance
-region: content
-weight: 0
+region: sidebar_first
+weight: -3
 provider: null
 plugin: 'we_megamenu_block:transaction-sidebar'
 settings:
