@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Seven theme.
+
+finance.settings:
+  type: theme_settings
+  label: 'Finance settings'
