@@ -20,6 +20,7 @@ dependencies:
     - paragraphs
     - smart_date
     - user
+    - views_aggregator
     - views_simple_math_field
 id: expenses
 label: Expenses
@@ -848,9 +849,8 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: table
+        type: views_aggregator_plugin_style_table
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
           columns:
@@ -875,6 +875,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_replace
+              aggr_par_column: 'Overall Total'
             field_type:
               sortable: false
               default_sort_order: asc
@@ -882,6 +889,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
             field_user:
               sortable: false
               default_sort_order: asc
@@ -889,6 +903,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
             field_merchant:
               sortable: false
               default_sort_order: asc
@@ -896,6 +917,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
             field_mode:
               sortable: false
               default_sort_order: asc
@@ -903,6 +931,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
             field_item_category:
               sortable: false
               default_sort_order: asc
@@ -910,6 +945,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
             field_item:
               sortable: false
               default_sort_order: asc
@@ -917,6 +959,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
             field_units:
               sortable: false
               default_sort_order: asc
@@ -924,6 +973,13 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_replace
+              aggr_par_column: 'Overall Total'
             field_unit_amount:
               sortable: false
               default_sort_order: asc
@@ -931,11 +987,25 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_replace
+              aggr_par_column: ₱
             nothing_1:
               align: views-align-right
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: true
+              aggr_column: views_aggregator_replace
+              aggr_par_column: 'Overall Total'
             field_views_simple_math_field:
               sortable: false
               default_sort_order: asc
@@ -943,17 +1013,45 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_replace
+              aggr_par_column: ₱
             nothing:
               align: views-align-right
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: true
+              aggr_column: views_aggregator_sum
+              aggr_par_column: 'Overall Total'
           override: true
-          sticky: false
+          sticky: true
           summary: ''
           empty_table: false
           caption: ''
           description: ''
+          group_aggregation:
+            group_aggregation_results: '1'
+            grouping_field_class: ''
+            result_label_prefix: ₱
+            result_label_suffix: ''
+            grouping_row_class: ''
+          column_aggregation:
+            totals_row_position:
+              2: 2
+              1: 0
+              3: 0
+            totals_per_page: '1'
+            precision: '2'
+            totals_row_class: ''
       row:
         type: fields
         options:
