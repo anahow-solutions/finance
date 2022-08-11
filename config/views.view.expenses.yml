@@ -20,6 +20,7 @@ dependencies:
     - paragraphs
     - smart_date
     - user
+    - views_simple_math_field
 id: expenses
 label: Expenses
 module: views
@@ -555,7 +556,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: 'Unit Amount'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -601,7 +602,7 @@ display:
             thousand_separator: ','
             decimal_separator: .
             scale: 2
-            prefix_suffix: true
+            prefix_suffix: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -612,6 +613,174 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        nothing_1:
+          id: nothing_1
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: 'Unit Amount'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '₱ {{ field_unit_amount }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+        field_views_simple_math_field:
+          id: field_views_simple_math_field
+          table: views_simple_math_field
+          field: field_views_simple_math_field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field_views_simple_math_field
+          label: 'Total Amount'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: 0
+          precision: '0'
+          decimal: .
+          separator: ''
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          fieldset_one:
+            data_field:
+              field_units: field_units
+              field_unit_amount: field_unit_amount
+              field_date: 0
+              field_type: 0
+              field_user: 0
+              field_merchant: 0
+              field_mode: 0
+              field_item_category: 0
+              field_item: 0
+              nothing: 0
+            formula: '@field_units * @field_unit_amount'
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: 'Total Amount'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '₱ {{ field_views_simple_math_field|number_format(2, ''.'', '','') }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: none
         options:
@@ -694,6 +863,9 @@ display:
             field_item: field_item
             field_units: field_units
             field_unit_amount: field_unit_amount
+            nothing_1: nothing_1
+            field_views_simple_math_field: field_views_simple_math_field
+            nothing: nothing
           default: '-1'
           info:
             field_date:
@@ -755,6 +927,23 @@ display:
             field_unit_amount:
               sortable: false
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing_1:
+              align: views-align-right
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_views_simple_math_field:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
               align: views-align-right
               separator: ''
               empty_column: false
