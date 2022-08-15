@@ -24,7 +24,7 @@ dependencies:
     - views_aggregator
     - views_simple_math_field
 id: expenses
-label: Expenses
+label: Transactions
 module: views
 description: ''
 tag: ''
@@ -1850,7 +1850,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: expenses
+      path: transactions
       menu:
         type: normal
         title: 'Transaction Sidebar'
@@ -2842,7 +2842,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: expenses/daily
+      path: transactions/daily
       menu:
         type: normal
         title: 'Transaction Sidebar'
@@ -3913,7 +3913,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: expenses/weekly
+      path: transactions/weekly
       menu:
         type: normal
         title: 'Transaction Sidebar'
@@ -4984,7 +4984,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: expenses/monthly
+      path: transactions/monthly
       menu:
         type: normal
         title: 'Transaction Sidebar'
@@ -6055,7 +6055,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: expenses/yearly
+      path: transactions/yearly
       menu:
         type: normal
         title: 'Transaction Sidebar'
@@ -7128,7 +7128,7 @@ display:
         fields: false
       display_description: ''
       display_extenders: {  }
-      path: expenses/entry
+      path: transactions/entry
       menu:
         type: normal
         title: 'Transaction Sidebar'
