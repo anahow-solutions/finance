@@ -966,7 +966,7 @@ display:
               aggr_par: ''
               has_aggr_column: true
               aggr_column: views_aggregator_replace
-              aggr_par_column: 'OVERALL TOTAL:'
+              aggr_par_column: 'NET AMOUNT:'
             field_units:
               sortable: false
               default_sort_order: asc
@@ -1032,7 +1032,7 @@ display:
               aggr_par: ''
               has_aggr_column: true
               aggr_column: views_aggregator_sum
-              aggr_par_column: 'Overall Total'
+              aggr_par_column: ''
           override: true
           sticky: true
           summary: ''
@@ -1620,7 +1620,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: false
@@ -1686,7 +1686,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: false
           alter:
             alter_text: true
@@ -1735,7 +1735,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field_views_simple_math_field
-          label: 'Total Amount'
+          label: Amount
           exclude: true
           alter:
             alter_text: false
@@ -1795,6 +1795,7 @@ display:
               field_mode: 0
               field_item_category: 0
               field_item: 0
+              nothing_1: 0
               nothing: 0
             formula: '@field_units * @field_unit_amount'
         nothing:
@@ -1805,7 +1806,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Total Amount'
+          label: Amount
           exclude: false
           alter:
             alter_text: true
@@ -2399,7 +2400,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: false
@@ -2465,7 +2466,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: true
@@ -2514,7 +2515,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field_views_simple_math_field
-          label: 'Total Amount'
+          label: Amount
           exclude: true
           alter:
             alter_text: false
@@ -2574,6 +2575,7 @@ display:
               field_mode: 0
               field_item_category: 0
               field_item: 0
+              nothing_1: 0
               nothing: 0
             formula: '@field_units * @field_unit_amount'
         nothing:
@@ -2584,7 +2586,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Total Amount'
+          label: Amount
           exclude: false
           alter:
             alter_text: true
@@ -2742,7 +2744,7 @@ display:
               aggr_par: ', '
               has_aggr_column: true
               aggr_column: views_aggregator_replace
-              aggr_par_column: 'OVERALL TOTAL:'
+              aggr_par_column: 'NET AMOUNT:'
             field_units:
               sortable: false
               default_sort_order: asc
@@ -3455,7 +3457,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: false
@@ -3521,7 +3523,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: true
@@ -3570,7 +3572,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field_views_simple_math_field
-          label: 'Total Amount'
+          label: Amount
           exclude: true
           alter:
             alter_text: false
@@ -3623,6 +3625,7 @@ display:
             data_field:
               field_units: field_units
               field_unit_amount: field_unit_amount
+              field_date_1: 0
               field_date: 0
               field_type: 0
               field_user: 0
@@ -3630,6 +3633,7 @@ display:
               field_mode: 0
               field_item_category: 0
               field_item: 0
+              nothing_1: 0
               nothing: 0
             formula: '@field_units * @field_unit_amount'
         nothing:
@@ -3640,7 +3644,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Total Amount'
+          label: Amount
           exclude: false
           alter:
             alter_text: true
@@ -3729,7 +3733,7 @@ display:
               aggr_par: ''
               has_aggr_column: true
               aggr_column: views_aggregator_replace
-              aggr_par_column: 'OVERALL TOTAL:'
+              aggr_par_column: 'NET AMOUNT:'
             field_type:
               sortable: false
               default_sort_order: asc
@@ -4526,7 +4530,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: false
@@ -4592,7 +4596,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: true
@@ -4641,7 +4645,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field_views_simple_math_field
-          label: 'Total Amount'
+          label: Amount
           exclude: true
           alter:
             alter_text: false
@@ -4694,6 +4698,7 @@ display:
             data_field:
               field_units: field_units
               field_unit_amount: field_unit_amount
+              field_date_1: 0
               field_date: 0
               field_type: 0
               field_user: 0
@@ -4701,6 +4706,7 @@ display:
               field_mode: 0
               field_item_category: 0
               field_item: 0
+              nothing_1: 0
               nothing: 0
             formula: '@field_units * @field_unit_amount'
         nothing:
@@ -4711,7 +4717,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Total Amount'
+          label: Amount
           exclude: false
           alter:
             alter_text: true
@@ -4786,7 +4792,7 @@ display:
               aggr_par: ''
               has_aggr_column: true
               aggr_column: views_aggregator_replace
-              aggr_par_column: 'OVERALL TOTAL:'
+              aggr_par_column: 'NET AMOUNT:'
             field_date:
               sortable: false
               default_sort_order: asc
@@ -5597,7 +5603,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: false
@@ -5663,7 +5669,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: true
@@ -5712,7 +5718,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field_views_simple_math_field
-          label: 'Total Amount'
+          label: Amount
           exclude: true
           alter:
             alter_text: false
@@ -5765,6 +5771,7 @@ display:
             data_field:
               field_units: field_units
               field_unit_amount: field_unit_amount
+              field_date_1: 0
               field_date: 0
               field_type: 0
               field_user: 0
@@ -5772,6 +5779,7 @@ display:
               field_mode: 0
               field_item_category: 0
               field_item: 0
+              nothing_1: 0
               nothing: 0
             formula: '@field_units * @field_unit_amount'
         nothing:
@@ -5782,7 +5790,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Total Amount'
+          label: Amount
           exclude: false
           alter:
             alter_text: true
@@ -5857,7 +5865,7 @@ display:
               aggr_par: ''
               has_aggr_column: true
               aggr_column: views_aggregator_replace
-              aggr_par_column: 'OVERALL TOTAL:'
+              aggr_par_column: 'NET AMOUNT:'
             field_date:
               sortable: false
               default_sort_order: asc
@@ -6670,7 +6678,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: false
@@ -6736,7 +6744,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Unit Amount'
+          label: 'Unit Price'
           exclude: true
           alter:
             alter_text: true
@@ -6785,7 +6793,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field_views_simple_math_field
-          label: 'Total Amount'
+          label: Amount
           exclude: true
           alter:
             alter_text: false
@@ -6838,6 +6846,7 @@ display:
             data_field:
               field_units: field_units
               field_unit_amount: field_unit_amount
+              nid: 0
               field_date: 0
               field_type: 0
               field_user: 0
@@ -6845,6 +6854,7 @@ display:
               field_mode: 0
               field_item_category: 0
               field_item: 0
+              nothing_1: 0
               nothing: 0
             formula: '@field_units * @field_unit_amount'
         nothing:
@@ -6855,7 +6865,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: custom
-          label: 'Total Amount'
+          label: Amount
           exclude: false
           alter:
             alter_text: true
@@ -7028,7 +7038,7 @@ display:
               aggr_par: ','
               has_aggr_column: true
               aggr_column: views_aggregator_replace
-              aggr_par_column: 'OVERALL TOTAL:'
+              aggr_par_column: 'NET AMOUNT:'
             field_units:
               sortable: false
               default_sort_order: asc

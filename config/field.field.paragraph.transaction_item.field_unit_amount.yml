@@ -9,7 +9,7 @@ id: paragraph.transaction_item.field_unit_amount
 field_name: field_unit_amount
 entity_type: paragraph
 bundle: transaction_item
-label: 'Unit Amount'
+label: 'Unit Price'
 description: ''
 required: true
 translatable: false
