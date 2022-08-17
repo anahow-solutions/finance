@@ -3,9 +3,24 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: baseline;
+  width: 78%;
+  /*
+      th,
+      .field-multiple-drag,
+      .field_item_category,
+      .field_item,
+      .field_units,
+      .field_unit_amount,
+      .action {
+        background-color: #E0E0D8;
+      }
+    */
 }
 .path-node .layout-region-node-main > * {
-  width: 19%;
+  width: 17%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
 }
 .path-node .layout-region-node-main .field--name-title,
 .path-node .layout-region-node-main .field--name-langcode,
