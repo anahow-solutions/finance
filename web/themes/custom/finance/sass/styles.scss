@@ -1,0 +1,38 @@
+.path-node {
+  .layout-region-node-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    > * {
+      width: 19%;
+    }
+
+    .field--name-title,
+    .field--name-langcode,
+    .field--name-path {
+      display: none;
+    }
+
+    .field--name-field-date,
+    .field--name-field-type,
+    .field--name-field-user,
+    .field--name-field-merchant,
+    .field--name-field-mode {
+      border: 1px solid #ccc;
+
+      > * {
+        margin: 0;
+      }
+    }
+
+    .field--name-field-items {
+      width: 100%;
+    }
+  }
+
+  .layout-region-node-secondary {
+    display: none;
+  }
+}

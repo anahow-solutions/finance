@@ -1,0 +1,34 @@
+.path-node .layout-region-node-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.path-node .layout-region-node-main > * {
+  width: 19%;
+}
+.path-node .layout-region-node-main .field--name-title,
+.path-node .layout-region-node-main .field--name-langcode,
+.path-node .layout-region-node-main .field--name-path {
+  display: none;
+}
+.path-node .layout-region-node-main .field--name-field-date,
+.path-node .layout-region-node-main .field--name-field-type,
+.path-node .layout-region-node-main .field--name-field-user,
+.path-node .layout-region-node-main .field--name-field-merchant,
+.path-node .layout-region-node-main .field--name-field-mode {
+  border: 1px solid #ccc;
+}
+.path-node .layout-region-node-main .field--name-field-date > *,
+.path-node .layout-region-node-main .field--name-field-type > *,
+.path-node .layout-region-node-main .field--name-field-user > *,
+.path-node .layout-region-node-main .field--name-field-merchant > *,
+.path-node .layout-region-node-main .field--name-field-mode > * {
+  margin: 0;
+}
+.path-node .layout-region-node-main .field--name-field-items {
+  width: 100%;
+}
+.path-node .layout-region-node-secondary {
+  display: none;
+}
