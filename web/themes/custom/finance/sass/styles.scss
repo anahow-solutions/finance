@@ -4,13 +4,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
-    width: 78%;
+    width: 972px;
+    padding: 0;
 
-    > * {
-      width: 17%;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      padding-left: 10px;
+    > * { // layout-region-node-main contents
+      width: 180px;
+      padding: 8px 0;
+      border: 1px solid #ccc;
+      background-color: #E0E0D8;
+      height: 100px;
+
+      > * {
+        margin: 0 10px;
+      }
     }
 
     .field--name-title,
@@ -19,37 +25,125 @@
       display: none;
     }
 
-    .field--name-field-date,
-    .field--name-field-type,
-    .field--name-field-user,
-    .field--name-field-merchant,
-    .field--name-field-mode {
-      border: 1px solid #ccc;
-      // background-color: #E0E0D8;
-
-      > * {
-        margin: 0;
-      }
-    }
-
-/*
-    th,
-    .field-multiple-drag,
-    .field_item_category,
-    .field_item,
-    .field_units,
-    .field_unit_amount,
-    .action {
-      background-color: #E0E0D8;
-    }
-  */
-
+    /**
+     * Items paragraph
+     */
     .field--name-field-items {
       width: 100%;
-    }
-  }
+      height: 100%;
+      border: 1px solid #ccc;
+      background-color: #E0E0D8;
+      margin-top: 28px;
+      margin-bottom: 28px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: #E0E0D8;
+
+      .paragraphs-tabs-wrapper{
+        margin: 0;
+      }
+
+      input,
+      select,
+      .chosen-container,
+      .shs-widget-container,
+      .chosen-single,
+      .form-type-textfield {
+        width: 100%;
+      }
+
+      .form-item {
+        margin: 0px;
+        display: flex;
+
+        .placeholder {
+          display: none;
+        }
+      }
+
+      .tabledrag-toggle-weight-wrapper,
+      caption {
+        display: none;
+      }
+
+      table + .clearfix {
+        font-size: 0px;
+      }
+
+      tr,
+      th {
+        border: 0px;
+      }
+
+      tr {
+        width: 90.5%;
+      }
+
+      th {
+        background-color: #E0E0D8;
+      }
+
+      th:first-child {
+        display: none
+      }
+/*
+      tr th:nth-child(2) {
+        background-color: red;
+      }
+
+      tr th:nth-child(3) {
+        background-color: blue;
+      }
+
+      tr th:nth-child(4) {
+        background-color: yellow;
+      }
+
+      tr th:nth-child(5) {
+        background-color: green;
+      }
+*/
+      .field_item_category,
+      .field_item,
+      .field_units,
+      .field_unit_amount {
+        width: 173.5px;
+      }
+
+      .action {
+        width: 26px;
+        padding: 0;
+      }
+
+      .field-multiple-drag,
+      .tabledrag-hide,
+      .delta-order {
+        display: none;
+      }
+
+      .clearfix { // add button
+        height: 100%;
+        align-self: flex-end;
+        display: flex;
+        align-content: flex-end;
+        margin-bottom: 9px;
+      }
+      .paragraphs-add-wrapper {
+        width: 155px;
+        height: 100%;
+      }
+
+      .field-add-more-submit {
+        width: 145px;
+      }
+
+    } // field--name-field-items
+  } // layout-region-node-main
 
   .layout-region-node-secondary {
     display: none;
   }
-}
+
+} // path-node
