@@ -29,7 +29,7 @@
      * Items paragraph
      */
     .field--name-field-items {
-      width: 100%;
+      width: 972px;
       height: 100%;
       border: 1px solid #ccc;
       background-color: #E0E0D8;
@@ -41,8 +41,19 @@
       padding-right: 0px;
       background-color: #E0E0D8;
 
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .tabledrag-changed-warning {
+        display: none;
+      }
+
       .paragraphs-tabs-wrapper{
         margin: 0;
+        width: 100%;
+        display: flex;
       }
 
       input,
@@ -63,13 +74,13 @@
         }
       }
 
+      .field-multiple-table {
+        width: 858.2px;
+      }
+
       .tabledrag-toggle-weight-wrapper,
       caption {
         display: none;
-      }
-
-      table + .clearfix {
-        font-size: 0px;
       }
 
       tr,
@@ -78,7 +89,8 @@
       }
 
       tr {
-        width: 90.5%;
+        padding: 0;
+        display: flex; // new
       }
 
       th {
@@ -86,57 +98,70 @@
       }
 
       th:first-child {
-        display: none
-      }
-/*
-      tr th:nth-child(2) {
-        background-color: red;
+        order: 7;
+        width: 42px;
       }
 
-      tr th:nth-child(3) {
-        background-color: blue;
+      tr th, tr td:nth-child(2),
+      tr th, tr td:nth-child(3),
+      tr th, tr td:nth-child(4),
+      tr th, tr td:nth-child(5) {
+        padding: 0;
+        width: 197.55px;
       }
 
-      tr th:nth-child(4) {
-        background-color: yellow;
-      }
-
-      tr th:nth-child(5) {
-        background-color: green;
-      }
-*/
-      .field_item_category,
-      .field_item,
-      .field_units,
-      .field_unit_amount {
-        width: 173.5px;
-      }
 
       .action {
         width: 26px;
-        padding: 0;
       }
 
-      .field-multiple-drag,
+      .draggable { // new
+        display: flex;
+      }
+
+      .field-multiple-drag { // new
+        order: 6;
+        width: 42px;
+      }
+
+      .tabledrag-handle {
+        display: unset !important;
+        height: 26px;
+        width: 42px;
+      }
+
+      .handle {
+        height: 26px;
+        width: 42px;
+      }
+
       .tabledrag-hide,
       .delta-order {
         display: none;
       }
 
-      .clearfix { // add button
+      table + .clearfix {
+        width: 113.8px;
+        font-size: 0px;
         height: 100%;
-        align-self: flex-end;
         display: flex;
+        align-self: flex-end;
         align-content: flex-end;
         margin-bottom: 9px;
       }
+
       .paragraphs-add-wrapper {
-        width: 155px;
+        width: 113.8px;
         height: 100%;
+        display: flex;
+
+        > * {
+          align-self: flex-end;
+        }
       }
 
       .field-add-more-submit {
-        width: 145px;
+        width: 113.8px;
       }
 
     } // field--name-field-items

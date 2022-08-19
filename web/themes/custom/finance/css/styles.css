@@ -25,7 +25,7 @@
   display: none;
 }
 .path-node .layout-region-node-main .field--name-field-items {
-  width: 100%;
+  width: 972px;
   height: 100%;
   border: 1px solid #ccc;
   background-color: #E0E0D8;
@@ -36,26 +36,18 @@
   padding-left: 0px;
   padding-right: 0px;
   background-color: #E0E0D8;
-  /*
-        tr th:nth-child(2) {
-          background-color: red;
-        }
-
-        tr th:nth-child(3) {
-          background-color: blue;
-        }
-
-        tr th:nth-child(4) {
-          background-color: yellow;
-        }
-
-        tr th:nth-child(5) {
-          background-color: green;
-        }
-  */
+}
+.path-node .layout-region-node-main .field--name-field-items * {
+  margin: 0;
+  padding: 0;
+}
+.path-node .layout-region-node-main .field--name-field-items .tabledrag-changed-warning {
+  display: none;
 }
 .path-node .layout-region-node-main .field--name-field-items .paragraphs-tabs-wrapper {
   margin: 0;
+  width: 100%;
+  display: flex;
 }
 .path-node .layout-region-node-main .field--name-field-items input,
 .path-node .layout-region-node-main .field--name-field-items select,
@@ -72,54 +64,77 @@
 .path-node .layout-region-node-main .field--name-field-items .form-item .placeholder {
   display: none;
 }
+.path-node .layout-region-node-main .field--name-field-items .field-multiple-table {
+  width: 858.2px;
+}
 .path-node .layout-region-node-main .field--name-field-items .tabledrag-toggle-weight-wrapper,
 .path-node .layout-region-node-main .field--name-field-items caption {
   display: none;
-}
-.path-node .layout-region-node-main .field--name-field-items table + .clearfix {
-  font-size: 0px;
 }
 .path-node .layout-region-node-main .field--name-field-items tr,
 .path-node .layout-region-node-main .field--name-field-items th {
   border: 0px;
 }
 .path-node .layout-region-node-main .field--name-field-items tr {
-  width: 90.5%;
+  padding: 0;
+  display: flex;
 }
 .path-node .layout-region-node-main .field--name-field-items th {
   background-color: #E0E0D8;
 }
 .path-node .layout-region-node-main .field--name-field-items th:first-child {
-  display: none;
+  order: 7;
+  width: 42px;
 }
-.path-node .layout-region-node-main .field--name-field-items .field_item_category,
-.path-node .layout-region-node-main .field--name-field-items .field_item,
-.path-node .layout-region-node-main .field--name-field-items .field_units,
-.path-node .layout-region-node-main .field--name-field-items .field_unit_amount {
-  width: 173.5px;
+.path-node .layout-region-node-main .field--name-field-items tr th, .path-node .layout-region-node-main .field--name-field-items tr td:nth-child(2),
+.path-node .layout-region-node-main .field--name-field-items tr th, .path-node .layout-region-node-main .field--name-field-items tr td:nth-child(3),
+.path-node .layout-region-node-main .field--name-field-items tr th, .path-node .layout-region-node-main .field--name-field-items tr td:nth-child(4),
+.path-node .layout-region-node-main .field--name-field-items tr th, .path-node .layout-region-node-main .field--name-field-items tr td:nth-child(5) {
+  padding: 0;
+  width: 197.55px;
 }
 .path-node .layout-region-node-main .field--name-field-items .action {
   width: 26px;
-  padding: 0;
 }
-.path-node .layout-region-node-main .field--name-field-items .field-multiple-drag,
+.path-node .layout-region-node-main .field--name-field-items .draggable {
+  display: flex;
+}
+.path-node .layout-region-node-main .field--name-field-items .field-multiple-drag {
+  order: 6;
+  width: 42px;
+}
+.path-node .layout-region-node-main .field--name-field-items .tabledrag-handle {
+  display: unset !important;
+  height: 26px;
+  width: 42px;
+}
+.path-node .layout-region-node-main .field--name-field-items .handle {
+  height: 26px;
+  width: 42px;
+}
 .path-node .layout-region-node-main .field--name-field-items .tabledrag-hide,
 .path-node .layout-region-node-main .field--name-field-items .delta-order {
   display: none;
 }
-.path-node .layout-region-node-main .field--name-field-items .clearfix {
+.path-node .layout-region-node-main .field--name-field-items table + .clearfix {
+  width: 113.8px;
+  font-size: 0px;
   height: 100%;
-  align-self: flex-end;
   display: flex;
+  align-self: flex-end;
   align-content: flex-end;
   margin-bottom: 9px;
 }
 .path-node .layout-region-node-main .field--name-field-items .paragraphs-add-wrapper {
-  width: 155px;
+  width: 113.8px;
   height: 100%;
+  display: flex;
+}
+.path-node .layout-region-node-main .field--name-field-items .paragraphs-add-wrapper > * {
+  align-self: flex-end;
 }
 .path-node .layout-region-node-main .field--name-field-items .field-add-more-submit {
-  width: 145px;
+  width: 113.8px;
 }
 .path-node .layout-region-node-secondary {
   display: none;
