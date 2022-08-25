@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: transaction_item
-label: 'Transaction Item(s)'
+label: Item
 icon_uuid: null
 icon_default: null
 description: ''
