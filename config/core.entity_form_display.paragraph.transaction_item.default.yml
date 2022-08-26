@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.transaction_item.field_units
     - paragraphs.paragraphs_type.transaction_item
   module:
+    - entity_form_field_label
     - select_or_other
     - shs
 id: paragraph.transaction_item.default
@@ -22,8 +23,11 @@ content:
     region: content
     settings:
       select_element_type: select_or_other_select
-      sort_options: ''
-    third_party_settings: {  }
+      sort_options: ASC
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
   field_item_category:
     type: options_shs
     weight: 0
