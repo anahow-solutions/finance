@@ -5,4 +5,4 @@ dependencies: {  }
 name: Merchants
 vid: merchants
 description: ''
-weight: 0
+weight: -8

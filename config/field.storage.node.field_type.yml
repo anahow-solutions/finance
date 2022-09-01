@@ -13,13 +13,13 @@ settings:
   allowed_values:
     -
       value: dr
-      label: Debit
+      label: DR
     -
       value: cr
-      label: Credit
+      label: CR
     -
       value: ft
-      label: 'Fund Transfer'
+      label: FT
   allowed_values_function: ''
 module: options
 locked: false

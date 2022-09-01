@@ -1,0 +1,8 @@
+uuid: c8624ea3-384e-4c21-9f42-b874efa28f37
+langcode: en
+status: true
+dependencies: {  }
+name: Essentiality
+vid: essence
+description: ''
+weight: -9

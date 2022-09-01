@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_merchant
     - node.type.transaction
     - taxonomy.vocabulary.merchants
+  content:
+    - 'taxonomy_term:merchants:fa9cfd80-c8e6-4db2-8a84-3f3d9f95174d'
 id: node.transaction.field_merchant
 field_name: field_merchant
 entity_type: node
@@ -14,7 +16,9 @@ label: Merchant
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: fa9cfd80-c8e6-4db2-8a84-3f3d9f95174d
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

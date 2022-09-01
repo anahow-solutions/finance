@@ -5,4 +5,4 @@ dependencies: {  }
 name: 'Item category'
 vid: transaction_type
 description: ''
-weight: 0
+weight: -10

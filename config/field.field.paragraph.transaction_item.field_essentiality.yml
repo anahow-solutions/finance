@@ -1,0 +1,33 @@
+uuid: 5fda6522-b594-4c99-9989-eae05c9963ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_essentiality
+    - paragraphs.paragraphs_type.transaction_item
+    - taxonomy.vocabulary.essence
+  content:
+    - 'taxonomy_term:essence:8923ff1c-ece9-47ec-9bdf-afba65752476'
+id: paragraph.transaction_item.field_essentiality
+field_name: field_essentiality
+entity_type: paragraph
+bundle: transaction_item
+label: Essentiality
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 8923ff1c-ece9-47ec-9bdf-afba65752476
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      essence: essence
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

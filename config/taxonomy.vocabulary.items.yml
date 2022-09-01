@@ -2,7 +2,7 @@ uuid: 87f13d03-40c4-4d27-8dd7-154542634e04
 langcode: en
 status: true
 dependencies: {  }
-name: Items
+name: 'Transaction Item(s)'
 vid: items
 description: ''
-weight: 0
+weight: -5

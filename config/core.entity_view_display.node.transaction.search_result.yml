@@ -1,8 +1,9 @@
-uuid: 30cd0978-5330-4f5e-b5ae-6982f3f5fa09
+uuid: 7bac7b3c-622d-41ff-8c09-60a320d02a87
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.transaction.field_date
     - field.field.node.transaction.field_items
     - field.field.node.transaction.field_merchant
@@ -13,13 +14,12 @@ dependencies:
   module:
     - datetime
     - entity_form_field_label
-    - entity_reference_revisions
     - options
     - user
-id: node.transaction.default
+id: node.transaction.search_result
 targetEntityType: node
 bundle: transaction
-mode: default
+mode: search_result
 content:
   field_date:
     type: datetime_default
@@ -29,15 +29,6 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 1
-    region: content
-  field_items:
-    type: entity_reference_revisions_entity_view
-    label: inline
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 0
     region: content
   field_merchant:
     type: entity_reference_label
@@ -84,4 +75,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_items: true

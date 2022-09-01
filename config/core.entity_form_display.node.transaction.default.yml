@@ -22,6 +22,14 @@ targetEntityType: node
 bundle: transaction
 mode: default
 content:
+  body_class:
+    type: string_textfield
+    weight: 36
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 2
@@ -33,7 +41,10 @@ content:
     weight: 7
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: DATE
+        rewrite_label: 1
   field_items:
     type: paragraphs_table_widget
     weight: 12
@@ -56,37 +67,46 @@ content:
       duplicate: false
     third_party_settings:
       entity_form_field_label:
-        new_label: ''
-        rewrite_label: 0
+        new_label: ITEM
+        rewrite_label: 1
   field_merchant:
     type: select_or_other_reference
     weight: 10
     region: content
     settings:
       select_element_type: select_or_other_select
-      sort_options: ''
+      sort_options: ASC
     third_party_settings:
       entity_form_field_label:
-        new_label: ''
-        rewrite_label: 0
+        new_label: MERCHANT
+        rewrite_label: 1
   field_mode:
     type: options_pretty
     weight: 11
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: MODE
+        rewrite_label: 1
   field_type:
     type: options_pretty
     weight: 8
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: TYPE
+        rewrite_label: 1
   field_user:
     type: options_pretty
     weight: 9
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      entity_form_field_label:
+        new_label: USER
+        rewrite_label: 1
   path:
     type: path
     weight: 5
@@ -96,6 +116,13 @@ content:
   promote:
     type: boolean_checkbox
     weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  specific_node_class:
+    type: boolean_checkbox
+    weight: 37
     region: content
     settings:
       display_label: true

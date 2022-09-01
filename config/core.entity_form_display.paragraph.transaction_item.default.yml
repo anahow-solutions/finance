@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.transaction_item.field_essentiality
     - field.field.paragraph.transaction_item.field_item
     - field.field.paragraph.transaction_item.field_item_category
     - field.field.paragraph.transaction_item.field_unit_amount
@@ -10,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.transaction_item
   module:
     - entity_form_field_label
+    - pcr
     - select_or_other
     - shs
 id: paragraph.transaction_item.default
@@ -17,9 +19,15 @@ targetEntityType: paragraph
 bundle: transaction_item
 mode: default
 content:
+  field_essentiality:
+    type: options_pretty
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_item:
     type: select_or_other_reference
-    weight: 1
+    weight: 2
     region: content
     settings:
       select_element_type: select_or_other_select
@@ -36,18 +44,21 @@ content:
       display_node_count: false
       create_new_items: false
       create_new_levels: false
-      force_deepest: false
-    third_party_settings: {  }
+      force_deepest: true
+    third_party_settings:
+      entity_form_field_label:
+        new_label: ''
+        rewrite_label: 0
   field_unit_amount:
     type: number
-    weight: 3
+    weight: 4
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_units:
     type: number
-    weight: 2
+    weight: 3
     region: content
     settings:
       placeholder: ''

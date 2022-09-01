@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.transaction_item.field_essentiality
     - field.field.paragraph.transaction_item.field_item
     - field.field.paragraph.transaction_item.field_item_category
     - field.field.paragraph.transaction_item.field_unit_amount
@@ -13,6 +14,14 @@ targetEntityType: paragraph
 bundle: transaction_item
 mode: default
 content:
+  field_essentiality:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_item:
     type: entity_reference_label
     label: above

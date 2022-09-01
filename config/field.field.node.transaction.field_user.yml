@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_user
     - node.type.transaction
+  content:
+    - 'user:user:04d36013-86cd-4a79-956d-6e050c453c7e'
 id: node.transaction.field_user
 field_name: field_user
 entity_type: node
@@ -13,7 +15,9 @@ label: User
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    target_uuid: 04d36013-86cd-4a79-956d-6e050c453c7e
 default_value_callback: ''
 settings:
   handler: 'default:user'
