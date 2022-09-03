@@ -148,10 +148,13 @@ $c4: #DDA116;
       }
     }
 
+    // use ^= for starts with
+    // use $= for ends with
+    // use *= containing
     label[for="edit-field-type-dr"],
-    label[for="edit-field-user-2"],
+    label[for^="edit-field-user-"], // starts with
     label[for="edit-field-mode-9"],
-    label[for="edit-field-items-0-subform-field-essentiality-118"] {
+    .form-radios[id*="-subform-field-essentiality"] .form-item:first-child label {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
     }
@@ -159,7 +162,7 @@ $c4: #DDA116;
     label[for="edit-field-type-ft"],
     label[for="edit-field-user-3"],
     label[for="edit-field-mode-8"],
-    label[for="edit-field-items-0-subform-field-essentiality-119"] {
+    .form-radios[id*="-subform-field-essentiality"] .form-item:last-child label {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
     }
@@ -374,7 +377,7 @@ $c4: #DDA116; // yellow-orange
 
       .field-suffix { // Unit(s).
         margin: 10px 0 0 10px;
-        color: $c3;
+        color: $c1;
         width: 30%;
       }
 
@@ -386,9 +389,9 @@ $c4: #DDA116; // yellow-orange
 
       .field-prefix { // Unit price.
         width: 15%;
-        color: teal;
-        font-size: 22px;
-        margin-top: 6px;
+        color: $c1;
+        font-size: 20px;
+        margin-top: 7px;
       }
 
       th:first-child,

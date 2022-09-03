@@ -120,16 +120,16 @@
   background-color: #338A7A;
 }
 .path-node .layout-region-node-main label[for=edit-field-type-dr],
-.path-node .layout-region-node-main label[for=edit-field-user-2],
+.path-node .layout-region-node-main label[for^=edit-field-user-],
 .path-node .layout-region-node-main label[for=edit-field-mode-9],
-.path-node .layout-region-node-main label[for=edit-field-items-0-subform-field-essentiality-118] {
+.path-node .layout-region-node-main .form-radios[id*=-subform-field-essentiality] .form-item:first-child label {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 .path-node .layout-region-node-main label[for=edit-field-type-ft],
 .path-node .layout-region-node-main label[for=edit-field-user-3],
 .path-node .layout-region-node-main label[for=edit-field-mode-8],
-.path-node .layout-region-node-main label[for=edit-field-items-0-subform-field-essentiality-119] {
+.path-node .layout-region-node-main .form-radios[id*=-subform-field-essentiality] .form-item:last-child label {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -269,7 +269,7 @@
 }
 .path-node .layout-region-node-main .field--name-field-items .field-suffix {
   margin: 10px 0 0 10px;
-  color: #338A7A;
+  color: #DDD7C9;
   width: 30%;
 }
 .path-node .layout-region-node-main .field--name-field-items .field_unit_amount .form-number {
@@ -277,9 +277,9 @@
 }
 .path-node .layout-region-node-main .field--name-field-items .field-prefix {
   width: 15%;
-  color: teal;
-  font-size: 22px;
-  margin-top: 6px;
+  color: #DDD7C9;
+  font-size: 20px;
+  margin-top: 7px;
 }
 .path-node .layout-region-node-main .field--name-field-items th:first-child,
 .path-node .layout-region-node-main .field--name-field-items td:first-child {
