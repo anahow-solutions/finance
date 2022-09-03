@@ -12,6 +12,8 @@ dependencies:
     - node
     - paragraphs
     - user
+    - views_aggregator
+    - views_simple_math_field
 id: transaction_details
 label: 'Transaction Details'
 module: views
@@ -162,7 +164,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'No. of Units'
+          label: Unit(s)
           exclude: false
           alter:
             alter_text: false
@@ -228,7 +230,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Amount
+          label: 'Unit Price'
           exclude: false
           alter:
             alter_text: false
@@ -275,7 +277,7 @@ display:
             thousand_separator: ','
             decimal_separator: .
             scale: 2
-            prefix_suffix: false
+            prefix_suffix: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -286,6 +288,70 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_views_simple_math_field:
+          id: field_views_simple_math_field
+          table: views_simple_math_field
+          field: field_views_simple_math_field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field_views_simple_math_field
+          label: Amount
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: 0
+          precision: '0'
+          decimal: .
+          separator: ','
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ₱
+          suffix: ''
+          fieldset_one:
+            data_field:
+              field_units: field_units
+              field_unit_amount: field_unit_amount
+              field_item_category: 0
+              field_item: 0
+            formula: '@field_units * @field_unit_amount'
       pager:
         type: none
         options:
@@ -389,28 +455,108 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: table
+        type: views_aggregator_plugin_style_table
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
           columns:
-            title: title
+            field_item_category: field_item_category
+            field_item: field_item
+            field_units: field_units
+            field_unit_amount: field_unit_amount
+            field_views_simple_math_field: field_views_simple_math_field
           default: '-1'
           info:
-            title:
+            field_item_category:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            field_item:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            field_units:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            field_unit_amount:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: false
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            field_views_simple_math_field:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+              has_aggr: false
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: true
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
           override: true
           sticky: false
           summary: ''
           empty_table: false
           caption: ''
           description: ''
+          group_aggregation:
+            group_aggregation_results: '0'
+            grouping_field_class: ''
+            result_label_prefix: ''
+            result_label_suffix: ''
+            grouping_row_class: ''
+          column_aggregation:
+            totals_row_position:
+              2: 2
+              1: 0
+              3: 0
+            totals_per_page: '1'
+            precision: '2'
+            totals_row_class: ''
       row:
         type: fields
         options:
