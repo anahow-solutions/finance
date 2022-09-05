@@ -956,7 +956,7 @@ display:
               aggr_column: views_aggregator_sum
               aggr_par_column: ''
             field_essentiality:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
