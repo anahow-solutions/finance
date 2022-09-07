@@ -1,0 +1,191 @@
+/**
+ * Items paragraph
+ */
+.field--name-field-items {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  padding: 0;
+  /*
+     tr {
+       border: 0px;
+       padding: 0;
+       display: flex;
+       border-radius: 20px;
+     }
+  */ /*
+   tr th:nth-child(2),
+   tr th:nth-child(3),
+   tr th:nth-child(4),
+   tr th:nth-child(5),
+   tr th:nth-child(6) {
+     padding: 0;
+     width: 177.55px;
+     margin-top: 20px;
+     margin-left: 20px;
+     background-color: $c2;
+     color: $c1;
+     border: 0px;
+   }
+
+   .action { // Also a tr th.
+     width: 26px;
+     display: flex;
+     justify-content: center;
+     background-color: $c2;
+     border: 0px;
+   }
+
+   tr td:nth-child(2),
+   tr td:nth-child(3),
+   tr td:nth-child(4),
+   tr td:nth-child(5),
+   tr td:nth-child(6) {
+     padding: 0;
+     width: 177.55px;
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     background-color: $c2;
+     color: $c1;
+   }
+
+   tr th:nth-child(5),
+   tr th:nth-child(6),
+   tr td:nth-child(5),
+   tr td:nth-child(6) {
+     width: 88.77px;
+   }
+*/
+}
+.field--name-field-items * {
+  margin: 0;
+  padding: 0;
+}
+.field--name-field-items input,
+.field--name-field-items select,
+.field--name-field-items .chosen-container,
+.field--name-field-items .shs-widget-container,
+.field--name-field-items .chosen-single,
+.field--name-field-items .form-type-textfield {
+  width: 48%;
+  height: 26px;
+  border-radius: 5px;
+}
+.field--name-field-items input,
+.field--name-field-items select {
+  padding-right: 17px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #2D363B;
+  border-radius: 5px;
+  color: #2D363B;
+  background-color: #DDD7C9;
+}
+.field--name-field-items .form-item {
+  margin: 0px;
+  display: flex;
+  background-color: #2D363B;
+  border-radius: 16px;
+  width: 100%;
+}
+.field--name-field-items .field-multiple-table {
+  width: 91%;
+}
+.field--name-field-items .tabledrag-changed {
+  margin-right: 10px;
+  margin-bottom: 13px;
+}
+.field--name-field-items .field_essentiality .form-radios {
+  display: flex;
+}
+.field--name-field-items div.js-form-item-field-items-0-subform-field-essentiality:nth-child(1),
+.field--name-field-items div.js-form-item-field-items-0-subform-field-essentiality:nth-child(2) {
+  width: 50%;
+}
+.field--name-field-items .paragraphs-dropdown-action {
+  width: 103.8px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.field--name-field-items .draggable {
+  display: flex;
+  background-color: #2D363B;
+  border-radius: 0;
+  border-bottom-left-radius: 15px;
+}
+.field--name-field-items .field-multiple-drag {
+  order: 6;
+  width: 42px;
+  display: flex;
+  align-items: center;
+}
+.field--name-field-items .tabledrag-handle {
+  display: unset !important;
+  height: 30px;
+  width: 42px;
+  padding: 0;
+}
+.field--name-field-items .handle {
+  height: 30px;
+  width: 42px;
+}
+.field--name-field-items .shs-field-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 187.55px;
+}
+.field--name-field-items .shs-field-container .shs-widget-container {
+  width: 100%;
+}
+.field--name-field-items .shs-field-container .shs-widget-container:not(:only-child) {
+  width: 48%;
+}
+.field--name-field-items .shs-select,
+.field--name-field-items .chosen-single,
+.field--name-field-items .form-type-number,
+.field--name-field-items .form-text {
+  width: 172px;
+  height: 26px;
+}
+.field--name-field-items .form-type-select-or-other-select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 187.55px;
+}
+.field--name-field-items .form-type-select-or-other-select .form-type-select {
+  width: 100%;
+  padding-right: 16px;
+}
+.field--name-field-items .form-type-select-or-other-select .form-type-select:not(:only-child),
+.field--name-field-items .form-type-select-or-other-select .form-type-textfield {
+  width: 48%;
+  padding-right: 0;
+}
+.field--name-field-items .field-prefix {
+  margin-right: 4px;
+}
+.field--name-field-items table + .clearfix {
+  width: 8.999%;
+  font-size: 0px;
+  height: calc(100% - 40px);
+  display: flex;
+  align-self: flex-end;
+  align-items: end;
+}
+.field--name-field-items .paragraphs-add-wrapper {
+  width: 100%;
+  height: 22px;
+  display: flex;
+}
+.field--name-field-items .paragraphs-add-wrapper > * {
+  align-self: flex-end;
+}
+.field--name-field-items .field-add-more-submit {
+  height: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
