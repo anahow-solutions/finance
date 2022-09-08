@@ -32,6 +32,7 @@
         "drupal/field_tools": "^1.0@alpha",
         "drupal/jquery_ui_accordion": "^1.1",
         "drupal/jquery_ui_tabs": "^1.1",
+        "drupal/page_specific_class": "^2.0",
         "drupal/paragraphs": "^1.14",
         "drupal/paragraphs_table": "^1.7",
         "drupal/pcr": "^1.4",
