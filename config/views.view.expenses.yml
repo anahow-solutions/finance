@@ -2907,8 +2907,8 @@ display:
             grouping_row_class: ''
           column_aggregation:
             totals_row_position:
-              2: 2
-              1: 0
+              1: 1
+              2: 0
               3: 0
             totals_per_page: '1'
             precision: '2'
@@ -3981,8 +3981,8 @@ display:
             grouping_row_class: ''
           column_aggregation:
             totals_row_position:
-              2: 2
-              1: 0
+              1: 1
+              2: 0
               3: 0
             totals_per_page: '1'
             precision: '2'
@@ -5055,8 +5055,8 @@ display:
             grouping_row_class: ''
           column_aggregation:
             totals_row_position:
-              2: 2
-              1: 0
+              1: 1
+              2: 0
               3: 0
             totals_per_page: '1'
             precision: '2'
@@ -6129,8 +6129,8 @@ display:
             grouping_row_class: ''
           column_aggregation:
             totals_row_position:
-              2: 2
-              1: 0
+              1: 1
+              2: 0
               3: 0
             totals_per_page: '1'
             precision: '2'
@@ -7205,8 +7205,8 @@ display:
             grouping_row_class: ''
           column_aggregation:
             totals_row_position:
-              2: 2
-              1: 0
+              1: 1
+              2: 0
               3: 0
             totals_per_page: '0'
             precision: '2'
