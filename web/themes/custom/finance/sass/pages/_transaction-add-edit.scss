@@ -10,7 +10,8 @@
   margin-top: 30px;
 }
 
-.path-node { // page
+.node-add-transaction,
+.node-edit-transaction { // page
   display: flex;
   justify-content: center;
   background-color: $color--background;

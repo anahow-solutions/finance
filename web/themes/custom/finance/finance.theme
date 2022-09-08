@@ -16,6 +16,20 @@ function finance_preprocess_html(array &$variables) {
   /*if (isset($variables['head_title_array']['title']) && isset($variables['head_title_array']['name']) && ($variables['head_title_array']['title'] == $variables['head_title_array']['name'])) {
     $variables['head_title'] = $variables['head_title_array']['name'];
   }*/
+
+  // Get route
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  // Add edit class
+  if ($route_name == 'entity.node.edit_form') {
+    $variables['attributes']['class'][] = 'node-edit-transaction';
+  }
+
+  // Add create class
+  if ($route_name == 'node.add') {
+    $variables['attributes']['class'][] = 'node-add-transaction';
+  }
+
 }
 
 /**
