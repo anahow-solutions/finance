@@ -4,3 +4,11 @@ global-styling:
     base:
       css/base/elements.css: {}
       css/styles.css: {}
+
+datatables:
+  css:
+    theme:
+      https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css: {type: external}
+  js:
+    js/datatables.js: {}
+    https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js: {type: external}
